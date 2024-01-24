@@ -221,7 +221,7 @@ body {
 
 
 .work {
-    height: 110vh;
+    height: 75vh;
     width: 100%;
     background-color: #392467;
 }
@@ -250,7 +250,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 100px;
     height: 40%;
     width: 100%;
     background-color: transparent;
@@ -274,11 +274,12 @@ body {
     width: 250px;
     border-radius: 10px;
     background-color: #A367B1;
-    opacity: 0.8;
+    opacity: 0.6;
     color: white;
 }
 
 .container:hover{
+    cursor: pointer;
     opacity: 1;
 }
 
