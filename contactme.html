@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brand">Krishav Koirala.</div>
+        <!-- <div class="brand">क्रव्को</div>         -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Work & Progress</a></li>
+                <li><a href="contactme.html" class="contact-me" style="color: white;">Contact Me</a></li>
+                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="contact">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="a8c25d04-7091-41a0-b3fa-f2398d539b32">
+                <h1>Contact Me</h1>
+                <div class="name">
+                    <h3>Name</h3>
+                    <input type="text" name="name" id="name" placeholder="krishav" required>
+                </div>
+                <div class="email">
+                    <h3>Email</h3>
+                    <input type="email" name="name" id="email" placeholder="krishav@gmail.com" required>
+                </div>
+                <div class="message">
+                    <h3>Message</h3>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message.."
+                        required></textarea>
+                </div>
+                <button type="submit" id="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="image/pngwalakravko.png" alt="Your Logo">
+            </div>
+            <div class="follow-me">
+                <p>FOLLOW ME ON</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kris.hav.39" target="_blank"><i
+                            class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/krishavwashere/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/KrishavKoirala" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/KravKo" target="_blank"><i class="fa-brands fa-github fa-xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://krishav.itch.io/" target="_blank"><i class="fa-brands fa-itch-io fa-xl"
+                            style="color: #ffffff;"></i></i></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="https://kit.fontawesome.com/e509dd28a5.js" crossorigin="anonymous"></script>
+
+<script>
+    document.getElementById('submit').addEventListener('click', function () {
+        document.getElementById('message').innerhtml= "";
+        document.getElementById('name').innerText = "";
+        document.getElementById('email').innerText = "";
+    })
+</script>
