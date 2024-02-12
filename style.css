@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+/* font-family: 'Bree Serif', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Change the width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Change the color and rounded corners of the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #74649d;
+    height: 10px;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #F4F6F7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    padding: 10px 20px;
+    font-family: 'Rubik', sans-serif;
+    position: fixed;
+    z-index: 10;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu a:hover{
+    opacity: 0.9;
+}
+
+.contact-me {
+    background-color: #74649d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    /* Adjust the radius as needed */
+}
+
+
+.contact-me:hover {
+    opacity: 0.9;
+}
+
+/* Additional styles for "Resume" button */
+.resume {
+    background-color: #F0F2F4;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    /* Adjust the radius as needed */
+    cursor: pointer;
+}
+
+.resume:hover {
+    opacity: 0.9;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-div {
+    justify-content: center;
+    display: flex;
+    margin-top: 110px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 500px;
+    background-image: url('image/bestone.jpg');
+    /* Replace with the actual path to your image */
+    background-size: cover;
+    /* Adjust as needed: cover, contain, etc. */
+    background-position: center;
+}
+
+.intro {
+    margin-top: 150px;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    width: 800px;
+    text-align: center;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.description {
+    font-size: 18px;
+}
+
+.journey {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 1000px;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 20px 0;
+}
+
+.event {
+    font-family: 'Bree Serif', serif;
+    ;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.bullet {
+    border-radius: 50%;
+    background-color: #000;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 15px;
+    margin-left: -7.5px;
+    top: 0;
+    z-index: 1;
+}
+
+.line {
+    width: 2px;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    left: 15px;
+    margin-left: -1px;
+    top: 15px;
+}
+
+.content {
+    padding-left: 30px;
+}
+
+.event p {
+    color: #7C8B9B;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+footer {
+    background-color: #74649d;
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    margin-top: 25px;
+    max-width: 200px;
+    /* Adjust the size as needed */
+}
+
+.follow-me{
+    margin-top: 20px;
+}
+
+.follow-me p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
