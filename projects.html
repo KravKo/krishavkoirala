@@ -1,101 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="photos/logo.png" type="image/x-icon">
+    <title>My Works & Projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 </head>
+
 <body>
-
-    <div class="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="photos/logo.png" alt="Logo"></a>
-            <a href="index.html"> <span>Krishav Koirala.</span></a>
+    <nav class="navbar">
+        <div class="brand">Krishav Koirala.</div>
+        <!-- <div class="brand">क्रव्को</div>         -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Work & Progress</a></li>
+                <li><a href="#" class="contact-me" style="color: white;">Contact Me</a></li>
+                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">Resume</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a class="downloadp" href="photos/Krishav CV resume.pdf" download="photos/Krishav CV resume.pdf">Download My
-                    Resume</a></li>
-        </ul>
-        <div class="navbtn">
-            <img class="navbtn" id="navbtnid" src="photos/navigation-bar.png" alt="">
+    </nav>
 
-        </div>
-    </div>
-    <div class="dropdown" id="dropdown">
-        <ul class="drop-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">My Projects</a></li>
-            <li><a href="achivement.html">My Achivement</a></li>
-            <li><a class="downloadp" href="photos/Krishav CV resume.pdf" download="photos/Krishav CV resume.pdf">Download My
-                    Resume</a></li>
-        </ul>
-    </div>
-
-    <section class="work" id="projects">
-        <h1 class="myprojecttxt">My Projects</h1>
-        <div class="projects">
-            <div class="container">
-                <img src="photos/brom.png" alt="">
-                <h1>Broom!</h1>
-                <p>Type: Game</p>
-                <section>
-                    <a href="https://krishav.itch.io/broom" class="visit" target="_blank">View</a>
-
-                    <a href="https://krishav.itch.io/broom" class="source" target="_blank">Source code</a>
-                </section>
-            </div>
-
-            <div class="container">
-                <img src="photos/Pixellet TH.jpg" alt="">
-                <h1>PacMan : clone</h1>
-                <p>Type: Game</p>
-                <section>
-                    <a href="https://krishav.itch.io/pacman" class="visit" target="_blank">View</a>
-
-                    <a href="https://krishav.itch.io/pacman" class="source" target="_blank">Source code</a>
-                </section>
-            </div>
-
-
-            <div class="container">
-                <img src="photos/DOKAN.png" alt="">
-                <h1>Dokan</h1>
-                <p>Type: Website</p>
-                <section>
-                    <a href="https://kravko.github.io/dokan/sclproject/index.html" class="visit" target="_blank">View</a>
-
-                    <a href="https://github.com/KravKo/dokan/tree/main/sclproject" class="source" target="_blank">Source code</a>
-                </section>
-            </div>
-
-            <div class="container">
-                <img src="photos/booklogo.png" alt="">
-                <h1>Abot resturant</h1>
-                <p>Type: Website</p>
-                <section>
-                    <a href="https://kravko.github.io/bookmytbl/Aboutwebsite/index.html" class="visit" target="_blank">View</a>
-
-                    <a href="https://github.com/KravKo/bookmytbl/tree/main/Aboutwebsite" class="source" target="_blank">Source code</a>
-                </section>
-            </div>
-            <br>
-            <div class="container">
-                <img src="photos/booklogo.png" alt="">
-                <h1>Book my hotel</h1>
-                <p>Type: Website</p>
-                <section>
-                    <a href="https://kravko.github.io/bookmytbl/bookmyhotel/index.html" class="visit" target="_blank">View</a>
-
-                    <a href="https://github.com/KravKo/bookmytbl/tree/main/bookmyhotel" class="source" target="_blank">Source code</a>
-                </section>
+    <section class="projects">
+        <div class="project_container_main">
+            <h1>Game Development</h1>
+            <div class="project_containers_container">
+                <div class="project_container">
+                    <img src="projects/brom.png" alt="">
+                    <h3>Broom!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
+                    <div class="overlay">
+                        <a href="https://krishav.itch.io/s" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="projects/Pixellet TH.jpg" alt="">
+                    <h3>PacMan : clone</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
+                    <div class="overlay">
+                        <a href="https://krishav.itch.io/" class="view-button">View</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section >
 
-    
+        <div class="project_container_main">
+            <h1>Web Development</h1>
+            <div class="project_containers_container">
+                <div class="project_container">
+                    <img src="projects/dokan.png" alt="">
+                    <h3>Dokan</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
+                    <div class="overlay">
+                        <a href="https://kravko.github.io/dokan/sclproject/index.html" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="projects/booklogo.png" alt="">
+                    <h3>Hotel Booking</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
+                    <div class="overlay">
+                        <a href="https://kravko.github.io/bookmytbl/bookmyhotel/index.html" class="view-button">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project_container_main">
+            <h1>Graphics Designing</h1>
+            <div class="project_containers_container">
+                <div class="project_container">
+                    <img src="graphics/abstract logo.png" alt="">
+                    <div class="overlay">
+                        <a href="graphics/abstract logo.png" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="graphics/B-01-02.jpg" alt="">
+                    <div class="overlay">
+                        <a href="graphics/B-01-02.jpg" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="graphics/Backstage-1.png" alt="">
+                    <div class="overlay">
+                        <a href="graphics/Backstage-1.png" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="graphics/Backstage-3.png" alt="">
+                    <div class="overlay">
+                        <a href="graphics/Backstage-3.png" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="graphics/Bullet.png" alt="">
+                    <div class="overlay">
+                        <a href="graphics/Bullet.png" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+                <div class="project_container">
+                    <img src="graphics/KRAVKO-1.png" alt="">
+                    <div class="overlay">
+                        <a href="graphics/KRAVKO-1.png" target="_blank" class="view-button">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="image/pngwalakravko.png" alt="Your Logo">
+            </div>
+            <div class="follow-me">
+                <p>FOLLOW ME ON</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/kris.hav.39" target="_blank"><i
+                            class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/krishavwashere/" target="_blank"><i
+                            class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                    <a href="https://twitter.com/KrishavKoirala" target="_blank"><i class="fa-brands fa-x-twitter fa-xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://github.com/KravKo" target="_blank"><i class="fa-brands fa-github fa-xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://krishav.itch.io/" target="_blank"><i class="fa-brands fa-itch-io fa-xl"
+                            style="color: #ffffff;"></i></i></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
+<script src="https://kit.fontawesome.com/e509dd28a5.js" crossorigin="anonymous"></script>
