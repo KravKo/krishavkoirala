@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="brand">Krishav Koirala.</div>
-        <!-- <div class="brand">क्रव्को</div>         -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projects.html">Work & Progress</a></li>
-                <li><a href="contactme.html" class="contact-me" style="color: white;">Contact Me</a></li>
-                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">Resume</a></li>
+                <li><a href="contactme.html" class="contact-me" >Contact Me</a></li>
+                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">My Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -29,11 +34,11 @@
                 <h1>Contact Me</h1>
                 <div class="name">
                     <h3>Name</h3>
-                    <input type="text" name="name" id="name" placeholder="krishav" required>
+                    <input type="text" name="name" id="name" placeholder="e.g: krishav" required>
                 </div>
                 <div class="email">
                     <h3>Email</h3>
-                    <input type="email" name="name" id="email" placeholder="krishav@gmail.com" required>
+                    <input type="email" name="name" id="email" placeholder="e.g: krishav@gmail.com" required>
                 </div>
                 <div class="message">
                     <h3>Message</h3>
@@ -68,6 +73,15 @@
         </div>
     </footer>
 </body>
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+
+</script>
 
 </html>
 <script src="https://kit.fontawesome.com/e509dd28a5.js" crossorigin="anonymous"></script>

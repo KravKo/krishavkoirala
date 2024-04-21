@@ -26,82 +26,15 @@ body {
     background-color: #FFFFFF;
 }
 
-.navbar {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #F4F6F7;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    padding: 10px 20px;
-    font-family: 'Rubik', sans-serif;
-    position: fixed;
-    top: 0px;
-    z-index: 10;
-}
 
-.brand {
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    margin-right: 25px;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.menu a:hover {
-    opacity: 0.9;
-}
-
-.contact-me {
-    background-color: #74649d;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    /* Adjust the radius as needed */
-}
-
-
-.contact-me:hover {
-    opacity: 0.9;
-}
-
-/* Additional styles for "Resume" button */
-.resume {
-    background-color: #F0F2F4;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    /* Adjust the radius as needed */
-    cursor: pointer;
-}
-
-.resume:hover {
-    opacity: 0.9;
-}
 
 section{
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 40px 0px;
 }
 .contact{
     font-family: 'Oswald', sans-serif;
@@ -110,7 +43,7 @@ section{
     flex-direction: column;
     text-align: left;
     justify-content: left;
-    width: 1000px;
+    width: 100%;
 
 }
 
@@ -118,6 +51,7 @@ section{
     font-family: 'Oswald', sans-serif;
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .contact h3{
@@ -125,7 +59,7 @@ section{
 }
 
 input, textarea{
-    width: 500px;
+    width: 50%;
     margin-top: 5px;
     height: 50px;
     padding: 2px;
@@ -166,47 +100,25 @@ textarea{
     font-size: 20px;
     border: none;
     outline: none;
+    margin-bottom: 30px;
+    border: 2px solid transparent;
+    transition: color 0.3s, background-color 0.3s, border-color 0.3s;
 }
 
 .submit:hover{
-    cursor: pointer;
-    opacity: 0.9;
+    cursor: pointer;    
+    color: #74649d;
+    background-color: transparent;
+    border: 2px solid #74649d;
 }
 
 
-footer {
-    background-color: #74649d;
-    color: #fff;
-    height: 100px;
-    width: 100%;
-    margin-top: 30px;
-    text-align: center;
-}
+@media only screen and (max-width: 768px) {
 
-.footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.logo img {
-    margin-top: 25px;
-    max-width: 200px;
-    /* Adjust the size as needed */
-}
-
-.follow-me{
-    margin-top: 20px;
-}
-
-.follow-me p {
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin-right: 10px;
+    input, textarea{
+        width: 90%;
+    }
+    .contact{
+        margin-top: 150px;
+    }
 }

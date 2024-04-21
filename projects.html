@@ -6,110 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Works & Projects</title>
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
 </head>
 
 <body>
     <nav class="navbar">
         <div class="brand">Krishav Koirala.</div>
-        <!-- <div class="brand">क्रव्को</div>         -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <div class="menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projects.html">Work & Progress</a></li>
-                <li><a href="contactme.html" class="contact-me" style="color: white;">Contact Me</a></li>
-                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">Resume</a></li>
+                <li><a href="contactme.html" class="contact-me">Contact Me</a></li>
+                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">My Resume</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="projects">
-        <div class="project_container_main">
-            <h1>Game Development</h1>
-            <div class="project_containers_container">
-                <div class="project_container">
-                    <img src="projects/brom.png" alt="">
-                    <h3>Broom!</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
-                    <div class="overlay">
-                        <a href="https://krishav.itch.io/s" class="view-button">View</a>
-                    </div>
+        <div class="main-section-projects">
+            <div class="websites">
+                <h1>Websites:</h1>
+                <div class="sectionss">
+                    <a class="container" href="https://anukulelectronics.com/" target="_blank">
+                        <div>
+                            <img src="projects/Anukul.png" alt="">
+                            <div class="texts">
+                                <h3>Anukul</h3>
+                                <p>E-COMMERSE</p>
+                                <span class="code">React JS</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="container" href="https://nishantnn.github.io/N-K-s/" target="_blank">
+                        <div>
+                            <img src="https://nishantapoudel.com.np/images//niks.png" alt="">
+                            <div class="texts">
+                                <h3>NIKS</h3>
+                                <p>Website</p>
+                                <p>
+                                    <span class="code">HTML</span>
+                                    <span class="code">CSS</span>
+                                    <span class="code">JS</span>
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="container" href="https://kravko.github.io/dokan//sclproject/index.html" target="_blank">
+                        <div>
+                            <img src="projects/DOKAN.png" alt="">
+                            <div class="texts">
+                                <h3>Dokan</h3>
+                                <p>Project</p>
+                                <p>
+                                    <span class="code">HTML</span>
+                                    <span class="code">CSS</span>
+                                    <span class="code">JS</span>
+
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="container" href="https://kravko.github.io/bookmytbl/bookmyhotel/index.html"
+                        target="_blank">
+                        <div>
+                            <img src="projects/booklogo.png" alt="">
+                            <div class="texts">
+                                <h3>Table Booking</h3>
+                                <p>Project</p>
+                                <p>
+                                    <span class="code">HTML</span>
+                                    <span class="code">CSS</span>
+                                    <span class="code">JS</span>
+
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+
+                    <a class="container" href="https://github.com/KravKo" target="_blank">
+                        <div>
+                            <img src="image/kravko.png" alt="">
+                            <div class="texts">
+                                <h3>See more in Github</h3>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="project_container">
-                    <img src="projects/Pixellet TH.jpg" alt="">
-                    <h3>PacMan : clone</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
-                    <div class="overlay">
-                        <a href="https://krishav.itch.io/" class="view-button">View</a>
+
+            </div>
+            <div class="games">
+                <h1>Games:</h1>
+                <div class="sectionss">
+                    <a class="container" href="https://anukulelectronics.com/" target="_blank">
+                        <div>
+                            <img src="/projects/brom.png" alt="">
+                            <div class="texts">
+                                <h3>Brom</h3>
+                                <p>Type: Game</p>
+                                <span class="code">Unity</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="container" href="https://anukulelectronics.com/" target="_blank">
+                        <div>
+                            <img src="/projects/Pixellet TH.jpg" alt="">
+                            <div class="texts">
+                                <h3>PackMan</h3>
+                                <p>Type: Game</p>
+                                <span class="code">Unity</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <div class="designs">
+                <h1>Designs:</h1>
+                <div class="sectionss">
+                    <div class="image-container">
+                        <img class="design" src="graphics/abstract logo.png" alt="">
+                    </div>
+
+                    <div class="image-container">
+                        <img class="design" src="graphics/B-01-02.jpg" alt="">
+                    </div>
+
+                    <div class="image-container">
+                        <img class="design" src="graphics/wordmark-2.png" alt="">
+                    </div>
+
+                    <div class="image-container">
+                        <img class="design" src="graphics/Backstage-1.png" alt="">
+                    </div>
+                    
+                    <div class="image-container">
+                        <img class="design" src="graphics/Backstage-3.png" alt="">
+                    </div>
+
+                    <div class="image-container">
+                        <img class="design" src="graphics/Bullet.png" alt="">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="project_container_main">
-            <h1>Web Development</h1>
-            <div class="project_containers_container">
-                <div class="project_container">
-                    <img src="projects/dokan.png" alt="">
-                    <h3>Dokan</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
-                    <div class="overlay">
-                        <a href="https://kravko.github.io/dokan/sclproject/index.html" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="projects/booklogo.png" alt="">
-                    <h3>Hotel Booking</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, at!</p>
-                    <div class="overlay">
-                        <a href="https://kravko.github.io/bookmytbl/bookmyhotel/index.html" class="view-button">View</a>
-                    </div>
-                </div>
-            </div>
         </div>
-
-        <div class="project_container_main">
-            <h1>Graphics Designing</h1>
-            <div class="project_containers_container">
-                <div class="project_container">
-                    <img src="graphics/abstract logo.png" alt="">
-                    <div class="overlay">
-                        <a href="graphics/abstract logo.png" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="graphics/B-01-02.jpg" alt="">
-                    <div class="overlay">
-                        <a href="graphics/B-01-02.jpg" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="graphics/Backstage-1.png" alt="">
-                    <div class="overlay">
-                        <a href="graphics/Backstage-1.png" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="graphics/Backstage-3.png" alt="">
-                    <div class="overlay">
-                        <a href="graphics/Backstage-3.png" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="graphics/Bullet.png" alt="">
-                    <div class="overlay">
-                        <a href="graphics/Bullet.png" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-                <div class="project_container">
-                    <img src="graphics/KRAVKO-1.png" alt="">
-                    <div class="overlay">
-                        <a href="graphics/KRAVKO-1.png" target="_blank" class="view-button">View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
     <footer>
         <div class="footer-container">
@@ -135,6 +188,16 @@
         </div>
     </footer>
 </body>
+
+
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+
+
+</script>
 
 </html>
 <script src="https://kit.fontawesome.com/e509dd28a5.js" crossorigin="anonymous"></script>

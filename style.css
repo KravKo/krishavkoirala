@@ -63,7 +63,7 @@ body {
 }
 
 .menu a:hover{
-    opacity: 0.9;
+    color: #74649d;
 }
 
 .contact-me {
@@ -71,12 +71,14 @@ body {
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
-    /* Adjust the radius as needed */
+    border: 2px solid transparent;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-
 .contact-me:hover {
-    opacity: 0.9;
+    color: #74649d;
+    background-color: transparent;
+    border: 2px solid #74649d;
 }
 
 /* Additional styles for "Resume" button */
@@ -86,13 +88,16 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    /* Adjust the radius as needed */
     cursor: pointer;
+    border: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
 }
 
 .resume:hover {
-    opacity: 0.9;
+    color: #74649d;
+    border: 2px solid #74649d;
 }
+
 
 .main {
     display: flex;
@@ -108,7 +113,7 @@ body {
     border-radius: 10px;
     width: 1000px;
     height: 500px;
-    background-image: url('image/bestone.jpg');
+    background-image: url('image/Main-Background.jpg');
     /* Replace with the actual path to your image */
     background-size: cover;
     /* Adjust as needed: cover, contain, etc. */
@@ -219,4 +224,204 @@ footer {
 .social-icons a {
     display: inline-block;
     margin-right: 10px;
+}
+
+
+.hamburger {
+    display: none; /* Hide by default */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.skills{
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.skills h1{
+    margin-top: 20px;
+    width: 100vw;
+    text-align: center;
+}
+.progress-container {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Adjust as needed */
+  }
+  
+  .progress-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .progress-ring-circle {
+    fill: none;
+    stroke: #f3f3f3; /* Background color */
+    stroke-width: 8; /* Width of the ring */
+  }
+  
+  .progress-ring-progress-html {
+    fill: none;
+    stroke-linecap: round;
+    stroke: #eff309; /* Progress color */
+    stroke-width: 15; /* Width of the ring */
+    stroke-dasharray: 314; /* Circumference of the circle */
+    stroke-dashoffset: 314; /* Start with the progress at 0% */
+    transition: stroke-dashoffset 0.5s ease; /* Smooth transition animation */
+  }
+  
+  .progress-ring-progress-css { 
+    fill: none;
+    stroke-linecap: round;
+    stroke: #4901ce; /* Progress color */
+    stroke-width: 15; /* Width of the ring */
+    stroke-dasharray: 314; /* Circumference of the circle */
+    stroke-dashoffset: 314; /* Start with the progress at 0% */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  .progress-ring-progress-js { 
+    fill: none;
+    stroke-linecap: round;
+    stroke: #f74600; /* Progress color */
+    stroke-width: 15; /* Width of the ring */
+    stroke-dasharray: 314; /* Circumference of the circle */
+    stroke-dashoffset: 314; /* Start with the progress at 0% */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  .progress-ring-progress-react { 
+    fill: none;
+    stroke-linecap: round;
+    stroke: #6ff700; /* Progress color */
+    stroke-width: 15; /* Width of the ring */
+    stroke-dasharray: 314; /* Circumference of the circle */
+    stroke-dashoffset: 314; /* Start with the progress at 0% */
+    transition: stroke-dashoffset 0.5s ease;
+  }
+
+  
+  
+  .progress-text-html,
+  .progress-text-css,
+  .progress-text-js,
+  .progress-text-react{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust navbar width */
+    .navbar {
+        width: 100vw;
+    }
+
+    /* Hide regular menu */
+    .menu ul {
+        display: none;
+    }
+
+    /* Show the menu when active */
+    .menu.active ul {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        gap: 5px;
+        width: 100%;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: center;
+    }
+
+    /* Adjust margin for menu items */
+    .menu.active ul li {
+        margin: 10px 0;
+    }
+
+    /* Show hamburger menu */
+    .hamburger {
+        display: flex;
+        margin-left: 30%;
+    }
+
+    /* Adjust background-div width and height */
+    .background-div {
+        width: 95%;
+        height: 200px;
+    }
+
+    /* Adjust intro margin */
+    .intro {
+        margin-top: 30px;
+    }
+
+    /* Adjust title font size */
+    .title {
+        font-size: 30px;
+    }
+
+    /* Adjust description font size */
+    .description {
+        font-size: 9px;
+    }
+
+    .content{
+        text-align: left;
+    }
+
+    /* Adjust timeline styles */
+    .timeline {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        font-size: 10px;
+    }
+
+    /* Adjust journey width */
+    .journey {
+        width: 95%;
+    }
+
+    .social-icons a{
+        margin-right: 5px;
+    }
+
+    .progress-container {
+        display: grid;
+    }
 }

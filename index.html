@@ -12,13 +12,17 @@
 <body>
     <nav class="navbar">
         <div class="brand">Krishav Koirala.</div>
-        <!-- <div class="brand">क्रव्को</div>         -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <div class="menu">
             <ul>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projects.html">Work & Progress</a></li>
-                <li><a href="contactme.html" class="contact-me" style="color: white;">Contact Me</a></li>
-                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">Resume</a></li>
+                <li><a href="contactme.html" class="contact-me">Contact Me</a></li>
+                <li><a href="image/Krishav CV resume.pdf" target="_blank" class="resume">My Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -30,6 +34,42 @@
                     I specialize in Unity game development. Eager to enhance my skills through further study, I aim for
                     continuous growth.</span>
             </section>
+        </div>
+        <div class="skills">
+            <h1>My Skills</h1>
+            <div class="progress-container">
+                <div class="progress-wrapper">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle" cx="60" cy="60" r="50"></circle>
+                        <circle class="progress-ring-progress-html" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="progress-text-html">HTML</div>
+                </div>
+                <div class="progress-wrapper">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle" cx="60" cy="60" r="50"></circle>
+                        <circle class="progress-ring-progress-css" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="progress-text-css">CSS</div>
+                </div>
+                <div class="progress-wrapper">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle" cx="60" cy="60" r="50"></circle>
+                        <circle class="progress-ring-progress-js" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="progress-text-js">JS</div>
+                </div>
+                <div class="progress-wrapper">
+                    <svg class="progress-ring" width="120" height="120">
+                        <circle class="progress-ring-circle" cx="60" cy="60" r="50"></circle>
+                        <circle class="progress-ring-progress-react" cx="60" cy="60" r="50"></circle>
+                    </svg>
+                    <div class="progress-text-react">React</div>
+                </div>
+            </div>
+
+
+
         </div>
         <div class="journey">
             <h1>My journey</h1>
@@ -94,27 +134,60 @@
             </div>
         </div>
 
+        
         <footer>
             <div class="footer-container">
-              <div class="logo">
-                <img src="image/pngwalakravko.png" alt="Your Logo">
-              </div>
-              <div class="follow-me">
-                <p>FOLLOW ME ON</p>
-                <div class="social-icons">
-                  <a href="https://www.facebook.com/kris.hav.39" target="_blank"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
-                  <a href="https://www.instagram.com/krishavwashere/" target="_blank"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
-                  <a href="https://twitter.com/KrishavKoirala" target="_blank"><i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i></a>
-                  <a href="https://github.com/KravKo" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #ffffff;"></i></a>
-                  <a href="https://krishav.itch.io/" target="_blank"><i class="fa-brands fa-itch-io fa-xl" style="color: #ffffff;"></i></i></a>
-                  <!-- Add more social media icons as needed -->
+                <div class="logo">
+                    <img src="image/pngwalakravko.png" alt="Your Logo">
                 </div>
-              </div>
+                <div class="follow-me">
+                    <p>FOLLOW ME ON</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kris.hav.39" target="_blank"><i
+                                class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://www.instagram.com/krishavwashere/" target="_blank"><i
+                                class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://twitter.com/KrishavKoirala" target="_blank"><i
+                                class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i></a>
+                        <a href="https://github.com/KravKo" target="_blank"><i class="fa-brands fa-github fa-xl"
+                                style="color: #ffffff;"></i></a>
+                        <a href="https://krishav.itch.io/" target="_blank"><i class="fa-brands fa-itch-io fa-xl"
+                                style="color: #ffffff;"></i></i></a>
+                        <!-- Add more social media icons as needed -->
+                    </div>
+                </div>
             </div>
-          </footer>
-        
+        </footer>
+
     </section>
 </body>
+<script>
+    function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('active');
+    }
+
+    function setProgress(skill, percent) {
+        var progress = document.querySelector('.progress-ring-progress-' + skill.toLowerCase());
+        var text = document.querySelector('.progress-text-' + skill.toLowerCase());
+
+        var circumference = 314;
+        var offset = circumference - percent / 100 * circumference;
+
+        progress.style.strokeDashoffset = offset;
+        text.textContent = skill + ' ' + percent + '%';
+    }
+
+    // Example usage:
+    setProgress('HTML', 90);
+    setProgress('CSS', 60);
+    setProgress('JS', 50);
+    setProgress('React', 40);
+    // Set progress for other skills similarly
+
+
+
+</script>
 
 </html>
 <script src="https://kit.fontawesome.com/e509dd28a5.js" crossorigin="anonymous"></script>
